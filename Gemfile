@@ -6,8 +6,14 @@ gem 'activerecord', '~> 5.2', '>= 5.2.2'
 gem 'pg', '~> 1.1', '>= 1.1.4'
 gem 'sinatra-activerecord', '~> 2.0', '>= 2.0.13'
 
+
+
 gem 'rspec', '~> 3.8'
 gem 'faker'
 
 gem 'rack', '~> 2.0', '>= 2.0.6'
 gem 'rack-test', '~> 1.1'
+
+gem 'guard', '~> 2.16', '>= 2.16.1'
+gem 'guard-rspec', '~> 4.7', '>= 4.7.3'
+gem 'guard-livereload', '~> 2.5', '>= 2.5.2'

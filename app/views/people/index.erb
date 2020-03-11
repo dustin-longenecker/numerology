@@ -1,10 +1,13 @@
-<h1>People</h1>
-<table>
+<div class="col-md-1"></div>
+<h2 class="col-md-8">People</h2>
+<a href="<%= "/people/new" %>" ><input class="col-md-3 btn btn-primary" id="add-new" type="button" value="Add New"/></a>
+<table class="table">
   <thead>
-    <th>Name</th>
-    <th>Birthdate</th>
-    <th>Edit</th>
-    <th>Delete</th>
+    <th scope="col">Name</th>
+    <th scope="col">Birthdate</th>
+    <th scope="col">Magic Number</th>
+    <th scope="col">Edit</th>
+    <th scope="col">Delete</th>
   </thead>
   <tbody>
     <% @people.each do |person| %>
@@ -13,6 +16,9 @@
           <a href="<%= "/people/#{person.id}" %>">
             <%= "#{person.first_name} #{person.last_name}" %>
           </a>
+        </td>
+        <td>
+            <%= "#{person.birthdate}" %>
         </td>
         <td>
           <%= "#{person.birthdate}" %>
